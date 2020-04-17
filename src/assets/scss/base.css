@@ -34,12 +34,16 @@
 }
 
 @media screen and (max-width: 800px) {
+  .responsive-nav {
+    background-color: transparent;
+    box-shadow: none;
+  }
   .responsive-nav ul {
     height: 100%;
     width: 300px;
     position: fixed;
     left: -210px;
-    top: 8vh;
+    top: 0;
     flex-direction: column;
     transition: 300ms ease all;
   }
@@ -55,6 +59,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    margin-top: 8vh;
   }
   .responsive-nav ul li a {
     flex-direction: row;
